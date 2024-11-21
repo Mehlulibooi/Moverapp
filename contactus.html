@@ -70,6 +70,38 @@
     <footer>
         <p>© 2024 TK and NZ trading & projects. All Rights Reserved.</p>
     </footer>
+
+    <!-- Include EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script>
+  // Initialize EmailJS
+  emailjs.init('YOUR_USER_ID'); // Replace 'YOUR_USER_ID' with your EmailJS user ID
+
+  // Form submission logic
+  const form = document.getElementById('contact-form'); // Ensure your form has this ID
+  const messageSentDiv = document.getElementById('message-sent');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent traditional form submission
+
+    // Collect form data
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+
+    // Send email using EmailJS
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', data)
+      .then(() => {
+        // Show "Message Sent" notification
+        messageSentDiv.classList.add('visible');
+        form.reset(); // Optionally, reset the form fields
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+      });
+  });
+</script>
+
  
 <!-- External JS file -->
 <script src="js/scripts.js"></script>
