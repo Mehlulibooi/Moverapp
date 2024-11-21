@@ -1,5 +1,4 @@
-
-//pice combo box
+//price combo box
 document.addEventListener("DOMContentLoaded", function() {
     const distanceInput = document.getElementById("distance");
     const shippingCostEl = document.getElementById("shipping-cost");

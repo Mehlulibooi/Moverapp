@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -845,36 +845,13 @@ footer p {
   z-index: 2;
 }
 
-/* Base Styles */
-.checkout-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.form-section {
-  padding-right: 20px; /* Default padding */
-}
-
-.order-summary {
-  margin-top: 0; /* Default margin */
-}
-
-.menu-icon {
-  display: none; /* Hidden by default */
-}
-
-nav {
-  display: flex; /* Default display */
-}
-
 /* Responsive Styles */
 
-/* Laptops and smaller screens (max-width: 1920px) */
 @media (max-width: 1920px) {
   .checkout-container {
     flex-direction: column;
-    width: 75%;
+    width: 75%
+        ;
   }
 
   .form-section {
@@ -886,44 +863,6 @@ nav {
   }
 
   .menu-icon {
-    display: block; /* Show menu icon */
-  }
-
-  nav {
-    display: none; /* Hide navigation */
-  }
-}
-
-/* Tablets and smaller screens (max-width: 1024px) */
-@media (max-width: 1024px) {
-  .checkout-container {
-    width: 90%; /* Narrower width for tablets */
-  }
-
-  .form-section {
-    padding-right: 0;
-  }
-
-  .order-summary {
-    margin-top: 15px;
-  }
-}
-
-/* Phones and smaller screens (max-width: 440px) */
-@media (max-width: 440px) {
-  .checkout-container {
-    width: 100%; /* Full width for phones */
-  }
-
-  .form-section {
-    padding-right: 0;
-  }
-
-  .order-summary {
-    margin-top: 10px;
-  }
-
-  .menu-icon {
     display: block;
   }
 
@@ -931,7 +870,6 @@ nav {
     display: none;
   }
 }
-
 
 /* Service request button styles */
 
