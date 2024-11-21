@@ -76,7 +76,7 @@
 
 <script>
   // Initialize EmailJS
-  emailjs.init('YOUR_USER_ID'); // Replace 'YOUR_USER_ID' with your EmailJS user ID
+  emailjs.init('MqdCfFs0RpqJHw02c'); // Replace 'YOUR_USER_ID' with your EmailJS user ID
 
   // Form submission logic
   const form = document.getElementById('contact-form'); // Ensure your form has this ID
@@ -90,7 +90,7 @@
     const data = Object.fromEntries(formData);
 
     // Send email using EmailJS
-    emailjs.send('service_uw08jrr', 'YOUR_TEMPLATE_ID', data)
+    emailjs.send('service_uw08jrr', 'template_sxtly6f', data)
       .then(() => {
         // Show "Message Sent" notification
         messageSentDiv.classList.add('visible');

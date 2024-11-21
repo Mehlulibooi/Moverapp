@@ -75,3 +75,32 @@ document.addEventListener("DOMContentLoaded", function() {
             // Optionally, reset the form fields
             form.reset();
         });
+
+// Code Attribution
+// The development of this project was guided by the following resources and tutorials:
+
+// GitHub Web App Deployment
+
+// Author: Akriti Goswami
+// Method: GitHub web app deployment
+// Watch the tutorial
+// HTML & CSS Fundamentals
+
+// Author: Programming with Mosh
+// Method: HTML & CSS
+// Watch the tutorial
+// Tailwind CSS Design
+
+// Author: Lukas | Web Development & Design
+// Method: Tailwind CSS
+// Watch the tutorial
+// PayFast Gateway Sandbox Integration
+
+// Author: Lukas | Web Development & Design
+// Method: PayFast gateway sandbox
+// Watch the tutorial
+// Contact Form EmailJS Integration
+
+// Author: ALTERCODES
+// Method: EmailJS for contact forms
+// Watch the tutorial
